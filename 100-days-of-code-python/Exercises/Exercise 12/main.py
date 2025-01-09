@@ -34,7 +34,7 @@ def guess_number_game():
     while lives > 0:
         print(f"You have {lives} attempts remaining to guess the number.")
         guess = input("Make a guess: ")
-
+        # Tries to convert the users guess input to an int, if not possible asks for a new guess
         try:
             guess = int(guess)
             if guess == target_number:
